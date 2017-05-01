@@ -14,7 +14,9 @@ import gevent
 from flask import Flask, render_template
 from flask_sockets import Sockets
 
-REDIS_URL = os.environ['REDIS_URL']
+## how will I get it in here as an env var?
+# REDIS_URL = os.environ['REDIS_URL']
+REDIS_URL = 'redis://h:p61db5276c2770eef88aeb04e9b6784e84ce1f6863be31fb707b2f506f7f7b4b6@ec2-34-206-214-110.compute-1.amazonaws.com:10309'
 REDIS_CHAN = 'chat'
 
 app = Flask(__name__)
